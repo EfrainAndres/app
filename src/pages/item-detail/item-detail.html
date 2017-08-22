@@ -14,6 +14,15 @@
   <div class="item-detail" padding>
     <h2>{{item.name}}</h2>
     <p>{{item.about}}</p>
+    <button ion-button large color="danger" data-toggle="collapse" data-target="#android-emulator-note">
+  Android emulator note
+    </button>
+    <div id="android-emulator-note" class="well collapse" style="height: 40px;">
+      <p>
+        We don't recommend using "emulate" for Android development. Unfortunately, the default Android emulator is horribly slow and will not accurately represent
+      a real device. Using the emulator isn't even recommended for native Android development.
+      </p>
+    </div>
     <h2>Ayudas Audiovisuales</h2>
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/TYvW3Ab465Q" frameborder="0" allowfullscreen></iframe>
 

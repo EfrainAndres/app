@@ -26,7 +26,7 @@ import { TranslateService } from '@ngx-translate/core'
   template: `<ion-menu [content]="content">
     <ion-header>
       <ion-toolbar>
-        <ion-title>Pages</ion-title>
+        <ion-title>Menú Predeterminado</ion-title>
       </ion-toolbar>
     </ion-header>
 
@@ -47,18 +47,18 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
-    { title: 'Tutorial', component: TutorialPage },
-    { title: 'Welcome', component: WelcomePage },
-    { title: 'Tabs', component: TabsPage },
-    { title: 'Cards', component: CardsPage },
-    { title: 'Content', component: ContentPage },
+    //{ title: 'Tutorial', component: TutorialPage },
+    //{ title: 'Welcome', component: WelcomePage },
+    //{ title: 'Tabs', component: TabsPage },
+    //{ title: 'Cards', component: CardsPage },
+    //{ title: 'Content', component: ContentPage },
     { title: 'Login', component: LoginPage },
-    { title: 'Signup', component: SignupPage },
-    { title: 'Map', component: MapPage },
-    { title: 'Master Detail', component: ListMasterPage },
-    { title: 'Menu', component: MenuPage },
-    { title: 'Settings', component: SettingsPage },
-    { title: 'Search', component: SearchPage }
+    //{ title: 'Signup', component: SignupPage },
+    //{ title: 'Map', component: MapPage },
+    //{ title: 'Master Detail', component: ListMasterPage },
+    //{ title: 'Menu', component: MenuPage },
+    //{ title: 'Settings', component: SettingsPage },
+    //{ title: 'Search', component: SearchPage }
   ]
 
   constructor(private translate: TranslateService, private platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {

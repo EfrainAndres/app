@@ -8,16 +8,11 @@
 
 <ion-content no-bounce>
   <ion-slides pager="true" (ionSlideWillChange)="onSlideChangeStart($event)">
-    <ion-slide *ngFor="let slide of slides">
-      <img [src]="slide.image" class="slide-image" />
-      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
-      <p [innerHTML]="slide.description"></p>
-    </ion-slide>
     <ion-slide>
       <img src="assets/img/app.png" class="slide-image" />
-      <h2 class="slide-title">APLICACIÓN MÓVIL ANDROID DE INFORMACIÓN OPORTUNA EN EL
-                                MANTENIMIENTO DE EQUIPOS DE CÓMPUTO Y REDES DE
-                                COMUNICACIONES PARA EL PERSONAL DE EJÉRCITO. </h2>
+      <h2 class="slide-title">DISEÑO E IMPLEMENTACION DE UNA APLICACION MOVIL ANDROID DE INFORMACION OPORTUNA
+                              EN EL MANTENIMIENTO DE EQUIPOS DE COMUNICACION MOTOROLA APX PARA EL PERSONAL DEL
+                              BATALLON DE MANTENIMIENTO DE COMUNICACIONES DE EJERCITO </h2>
                                 <br>
       <button ion-button icon-end large clear (click)="startApp()">
         IR
