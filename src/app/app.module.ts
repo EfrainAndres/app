@@ -11,6 +11,7 @@ import { ContentPage } from '../pages/content/content';
 import { ItemCreatePage } from '../pages/item-create/item-create';
 import { ItemDetailPage } from '../pages/item-detail/item-detail';
 import { ListMasterPage } from '../pages/list-master/list-master';
+import { ManualPage } from '../pages/manuales/item-modelo';
 import { LoginPage } from '../pages/login/login';
 import { MapPage } from '../pages/map/map';
 import { MenuPage } from '../pages/menu/menu';
@@ -23,6 +24,7 @@ import { WelcomePage } from '../pages/welcome/welcome';
 
 import { Api } from '../providers/api';
 import { Items } from '../mocks/providers/items';
+import { Manuales } from '../mocks/providers/manuales';
 import { Settings } from '../providers/settings';
 import { User } from '../providers/user';
 
@@ -63,6 +65,7 @@ export function provideSettings(storage: Storage) {
     ItemCreatePage,
     ItemDetailPage,
     ListMasterPage,
+    ManualPage,
     LoginPage,
     MapPage,
     MenuPage,
@@ -94,6 +97,7 @@ export function provideSettings(storage: Storage) {
     ItemCreatePage,
     ItemDetailPage,
     ListMasterPage,
+    ManualPage,
     LoginPage,
     MapPage,
     MenuPage,
@@ -107,6 +111,7 @@ export function provideSettings(storage: Storage) {
   providers: [
     Api,
     Items,
+    Manuales,
     User,
     Camera,
     GoogleMaps,

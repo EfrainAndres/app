@@ -4,9 +4,15 @@ import { NavController, ModalController } from 'ionic-angular';
 import { ItemCreatePage } from '../item-create/item-create';
 import { ItemDetailPage } from '../item-detail/item-detail';
 
+import { ManualPage } from '../manuales/item-modelo';
+
 import { Items } from '../../providers/providers';
 
 import { Item } from '../../models/item';
+
+import { Manuales } from '../../providers/providers';
+
+import { Manual } from '../../models/manuales';
 
 @Component({
   selector: 'page-list-master',
@@ -14,9 +20,11 @@ import { Item } from '../../models/item';
 })
 export class ListMasterPage {
   currentItems: Item[];
+  currentManuales: Manual[];
 
-  constructor(public navCtrl: NavController, public items: Items, public modalCtrl: ModalController) {
+  constructor(public navCtrl: NavController, public items: Items,public manuales: Manuales, public modalCtrl: ModalController) {
     this.currentItems = this.items.query();
+    this.currentManuales = this.manuales.query();
   }
 
   /**
@@ -52,6 +60,12 @@ export class ListMasterPage {
   openItem(item: Item) {
     this.navCtrl.push(ItemDetailPage, {
       item: item
+    });
+  }
+
+  openManual(manual: Manual) {
+    this.navCtrl.push(ManualPage, {
+      manual: manual
     });
   }
 }

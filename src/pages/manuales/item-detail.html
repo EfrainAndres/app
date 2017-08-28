@@ -1,19 +1,19 @@
 <ion-header>
 
   <ion-navbar >
-    <ion-title>{{ item.name }}</ion-title>
+    <ion-title>{{ manual.name }}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content>
-  <div class="item-profile" text-center #profilePic [style.background-image]="'url(' + item.profilePic + ')'">
+  <div class="manual-profile" text-center #profilePic [style.background-image]="'url(' + manual.profilePic + ')'">
   </div>
 
-  <div class="item-detail" padding>
-    <h2>{{item.name}}</h2>
-    <p>{{item.about}}</p>
+  <div class="manual-detail" padding>
+    <h2>{{manual.name}}</h2>
+    <p>{{manual.about}}</p>
     <ion-spinner icon="ripple"></ion-spinner>
 
     <ion-fab top right edge>

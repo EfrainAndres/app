@@ -9,6 +9,7 @@ import { ContentPage } from '../pages/content/content';
 import { FirstRunPage } from '../pages/pages';
 import { ListMasterPage } from '../pages/list-master/list-master';
 import { LoginPage } from '../pages/login/login';
+import { ItemDetailPage } from '../pages/item-detail/item-detail';
 import { MapPage } from '../pages/map/map';
 import { MenuPage } from '../pages/menu/menu';
 import { SearchPage } from '../pages/search/search';
@@ -26,13 +27,13 @@ import { TranslateService } from '@ngx-translate/core'
   template: `<ion-menu [content]="content">
     <ion-header>
       <ion-toolbar>
-        <ion-title>Menú Predeterminado</ion-title>
+        <ion-title>Menú</ion-title>
       </ion-toolbar>
     </ion-header>
 
     <ion-content>
       <ion-list>
-        <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <button color="secondary" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
           {{p.title}}
         </button>
       </ion-list>
@@ -52,13 +53,14 @@ export class MyApp {
     //{ title: 'Tabs', component: TabsPage },
     //{ title: 'Cards', component: CardsPage },
     //{ title: 'Content', component: ContentPage },
-    { title: 'Login', component: LoginPage },
     //{ title: 'Signup', component: SignupPage },
     //{ title: 'Map', component: MapPage },
-    //{ title: 'Master Detail', component: ListMasterPage },
-    //{ title: 'Menu', component: MenuPage },
+    { title: 'Master Detail', component: ListMasterPage },
+    //{ title: 'Item Detail', component: ItemDetailPage },
+    { title: 'Menu', component: MenuPage },
     //{ title: 'Settings', component: SettingsPage },
-    //{ title: 'Search', component: SearchPage }
+    //{ title: 'Search', component: SearchPage },
+    { title: 'Salir', component: LoginPage },
   ]
 
   constructor(private translate: TranslateService, private platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {

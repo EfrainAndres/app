@@ -1,14 +1,17 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Selección De Radios</ion-title>
+    <ion-title>Menú</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 <ion-content>
+  <ion-navbar color="primary">
+    <ion-title>Descripción General</ion-title>
+  </ion-navbar>
 
   <ion-list>
     <ion-item-sliding *ngFor="let item of currentItems">
@@ -18,6 +21,23 @@
         </ion-avatar>
         <h2>{{item.name}}</h2>
         <p>{{item.about}}</p>
+      </button>
+
+    </ion-item-sliding>
+  </ion-list>
+
+  <ion-navbar color="primary">
+    <ion-title>Manual Radios</ion-title>
+  </ion-navbar>
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let manual of currentManuales">
+      <button ion-item (click)="openManual(manual)">
+        <ion-avatar item-start>
+          <img [src]="manual.profilePic" />
+        </ion-avatar>
+        <h2>{{manual.name}}</h2>
+        <p>{{manual.about}}</p>
       </button>
 
     </ion-item-sliding>
