@@ -26,14 +26,14 @@ import { TranslateService } from '@ngx-translate/core'
 @Component({
   template: `<ion-menu [content]="content">
     <ion-header>
-      <ion-toolbar>
+      <ion-toolbar color="secondary">
         <ion-title>Menú</ion-title>
       </ion-toolbar>
     </ion-header>
 
     <ion-content>
       <ion-list>
-        <button color="secondary" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
           {{p.title}}
         </button>
       </ion-list>
@@ -52,12 +52,12 @@ export class MyApp {
     //{ title: 'Welcome', component: WelcomePage },
     //{ title: 'Tabs', component: TabsPage },
     //{ title: 'Cards', component: CardsPage },
-    //{ title: 'Content', component: ContentPage },
+    { title: 'Ayudas Audio-Visuales', component: ContentPage },
     //{ title: 'Signup', component: SignupPage },
-    //{ title: 'Map', component: MapPage },
-    { title: 'Master Detail', component: ListMasterPage },
+    { title: 'Eleméntos Comúnes', component: MapPage },
+    { title: 'Inicio', component: ListMasterPage },
     //{ title: 'Item Detail', component: ItemDetailPage },
-    { title: 'Menu', component: MenuPage },
+    //{ title: 'Menu', component: MenuPage },
     //{ title: 'Settings', component: SettingsPage },
     //{ title: 'Search', component: SearchPage },
     { title: 'Salir', component: LoginPage },
