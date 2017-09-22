@@ -1,48 +1,28 @@
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>{{ 'CARDS_TITLE' | translate }}</ion-title>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Menú</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
 <ion-content>
 
-  <ion-card *ngFor="let item of cardItems">
+  <ion-navbar color="secondary">
+    <ion-title>Mantenimiento Radio APX-5000</ion-title>
+  </ion-navbar>
 
-    <ion-item>
-      <ion-avatar item-start>
-        <img [src]="item.user.avatar">
-      </ion-avatar>
-      <h2>{{item.user.name}}</h2>
-      <p>{{item.date}}</p>
-    </ion-item>
+  <ion-list>
+    <ion-item-sliding *ngFor="let manual of currentManuales">
+      <button ion-item (click)="openManual(manual)">
+        <ion-avatar item-start>
+          <img [src]="manual.profilePic" />
+        </ion-avatar>
+        <h2>{{manual.name}}</h2>
+      </button>
 
-    <img [src]="item.image">
-
-    <ion-card-content>
-      <p>{{item.content}}</p>
-    </ion-card-content>
-
-    <ion-row>
-      <ion-col>
-        <button ion-button color="primary" clear small icon-start>
-            <ion-icon name='thumbs-up'></ion-icon>
-            12 Likes
-          </button>
-      </ion-col>
-      <ion-col>
-        <button ion-button color="primary" clear small icon-start>
-            <ion-icon name='text'></ion-icon>
-            4 Comments
-          </button>
-      </ion-col>
-      <ion-col center text-center>
-        <ion-note>
-          11h ago
-        </ion-note>
-      </ion-col>
-    </ion-row>
-  </ion-card>
+    </ion-item-sliding>
+  </ion-list>
 </ion-content>

@@ -36,7 +36,9 @@
     <img height="150" width="120" [src]="manual.bateriaimg" />
     <img height="150" width="120" [src]="manual.bateriaimg2" />
 
-    <p>{{manual.preguntabateria}}</p>
+    <ion-navbar color="primary">
+      <p>{{manual.preguntabateria}}</p>
+    </ion-navbar>
 
     <ion-card>
       <iframe width="100%" height="315" src="https://www.youtube.com/embed/2wMGcVuVJNg" frameborder="0" allowfullscreen></iframe>
@@ -46,7 +48,6 @@
           </ion-card-title>
       </ion-card-content>
     </ion-card>
-    <ion-spinner icon="ripple"></ion-spinner>
 
   </div>
 </ion-content>

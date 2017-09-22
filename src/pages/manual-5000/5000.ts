@@ -15,10 +15,10 @@ import { Manuales } from '../../providers/providers';
 import { Manual } from '../../models/manuales';
 
 @Component({
-  selector: 'cards-page',
-  templateUrl: 'cards.html'
+  selector: '5000-page',
+  templateUrl: '5000.html'
 })
-export class CardsPage {
+export class CincomilPage {
   currentItems: Item[];
   currentManuales: Manual[];
 

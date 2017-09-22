@@ -18,6 +18,7 @@ import { SignupPage } from '../pages/signup/signup';
 import { TabsPage } from '../pages/tabs/tabs';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { WelcomePage } from '../pages/welcome/welcome';
+//import { CincomilPage } from '../pages/manual-5000/5000';
 
 import { Settings } from '../providers/providers';
 
@@ -51,11 +52,13 @@ export class MyApp {
     //{ title: 'Tutorial', component: TutorialPage },
     //{ title: 'Welcome', component: WelcomePage },
     //{ title: 'Tabs', component: TabsPage },
-    //{ title: 'Cards', component: CardsPage },
+    { title: 'Mantenimiento APX 5000', component: CardsPage },
+
+    { title: 'Inicio', component: ListMasterPage },
+    //{ title: 'Mantenimiento APX 5000', component: CincomilPage },
     { title: 'Ayudas Audio-Visuales', component: ContentPage },
     //{ title: 'Signup', component: SignupPage },
     { title: 'Eleméntos Comúnes', component: MapPage },
-    { title: 'Inicio', component: ListMasterPage },
     //{ title: 'Item Detail', component: ItemDetailPage },
     //{ title: 'Menu', component: MenuPage },
     //{ title: 'Settings', component: SettingsPage },

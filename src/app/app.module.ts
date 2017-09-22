@@ -21,6 +21,7 @@ import { SignupPage } from '../pages/signup/signup';
 import { TabsPage } from '../pages/tabs/tabs';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { WelcomePage } from '../pages/welcome/welcome';
+//import { CincomilPage } from '../pages/manual-5000/5000';
 
 import { Api } from '../providers/api';
 import { Items } from '../mocks/providers/items';
@@ -74,7 +75,8 @@ export function provideSettings(storage: Storage) {
     SignupPage,
     TabsPage,
     TutorialPage,
-    WelcomePage
+    WelcomePage,
+    //CincomilPage,
   ],
   imports: [
     BrowserModule,
@@ -106,7 +108,8 @@ export function provideSettings(storage: Storage) {
     SignupPage,
     TabsPage,
     TutorialPage,
-    WelcomePage
+    WelcomePage,
+    //CincomilPage,
   ],
   providers: [
     Api,

@@ -26,5 +26,19 @@
     </ion-item-sliding>
   </ion-list>
 
-  
+  <ion-navbar color="secondary">
+    <ion-title>Mantenimiento Radios</ion-title>
+  </ion-navbar>
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let manual of currentManuales">
+      <button ion-item (click)="openManual(manual)">
+        <ion-avatar item-start>
+          <img [src]="manual.profilePic" />
+        </ion-avatar>
+        <h2>{{manual.name}}</h2>
+      </button>
+
+    </ion-item-sliding>
+  </ion-list>
 </ion-content>
