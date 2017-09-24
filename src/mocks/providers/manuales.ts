@@ -9,7 +9,7 @@ export class Manuales {
 
   defaultManual: any = {
     "name": "APX 5000",
-    "profilePic": "assets/img/apx5000.png",
+    "profilePic": "assets/img/mantenimiento.png",
     "about": "Manuales de Ayuda, Sección en la cual se podra observar paso a paso de la ayuda la cual esta buscando.",
   };
 
@@ -18,7 +18,7 @@ export class Manuales {
     let manuales = [
       {
         "name": "Bateria",
-        "profilePic": "assets/img/apx5000.jpg",
+        "profilePic": "assets/img/mantenimiento.jpg",
         //"about5000": "Manuales de Ayuda, Sección en la cual se podra observar paso a paso de la ayuda la cual esta buscando.",
         "carganame": "Carga de la Bateria",
         "carga": "La batería aprobada por Motorola que se entrega con el radio está descargada. Antes de utilizar una batería nueva, cárguela durante 16 horas como mínimo para garantizar una capacidad y un rendimiento óptimos.",
@@ -32,7 +32,7 @@ export class Manuales {
       },
       {
         "name": "Antena",
-        "profilePic": "assets/img/apx5000.jpg",
+        "profilePic": "assets/img/mantenimiento.jpg",
         //"about5000": "Manuales de Ayuda, Sección en la cual se podra observar paso a paso de la ayuda la cual esta buscando.",
         "carganame": "Colocación Antena",
         "carga": "Con el radio apagado, coloque la antena en su receptáculo y gírela hacia la derecha para ajustarla a el radio.",
@@ -46,7 +46,7 @@ export class Manuales {
       },
       {
         "name": "Conector de Accesorios",
-        "profilePic": "assets/img/apx5000.jpg",
+        "profilePic": "assets/img/mantenimiento.jpg",
         //"about5000": "Manuales de Ayuda, Sección en la cual se podra observar paso a paso de la ayuda la cual esta buscando.",
         "carganame": "Colocación de Accesorios",
         "carga": "El conector de accesorios se encuentra en el lateral de la antena del radio. Se utiliza para conectar accesorios al radio. Para retirar la cubierta del conector de accesorios, gire el tornillo de mano hacia la izquierda hasta que se libere del radio. Si el tornillo de mano",
@@ -60,7 +60,7 @@ export class Manuales {
       },
       {
         "name": "Potencia del Radio ",
-        "profilePic": "assets/img/apx5000.jpg",
+        "profilePic": "assets/img/mantenimiento.jpg",
         //"about5000": "Manuales de Ayuda, Sección en la cual se podra observar paso a paso de la ayuda la cual esta buscando.",
         "carganame": "Potencia baja del radio",
         "carga": "Dar a conocer, la forma que el radio, puede presentar fallas en su potencia, por lo cual se dan algunas recomendaciones de como solucionar y dar mantenimiento a este fallo",
@@ -73,8 +73,8 @@ export class Manuales {
         "videobateria":"https://www.youtube.com/embed/PyB81R9j1pk",
       },
       {
-        "name": "Conector de Accesorios",
-        "profilePic": "assets/img/apx5000.jpg",
+        "name": "Transmisión",
+        "profilePic": "assets/img/mantenimiento.jpg",
         //"about5000": "Manuales de Ayuda, Sección en la cual se podra observar paso a paso de la ayuda la cual esta buscando.",
         "carganame": "Colocación de Accesorios",
         "carga": "El conector de accesorios se encuentra en el lateral de la antena del radio. Se utiliza para conectar accesorios al radio. Para retirar la cubierta del conector de accesorios, gire el tornillo de mano hacia la izquierda hasta que se libere del radio. Si el tornillo de mano",
@@ -87,8 +87,8 @@ export class Manuales {
         "videobateria":"https://www.youtube.com/embed/PyB81R9j1pk",
       },
       {
-        "name": "Conector de Accesorios",
-        "profilePic": "assets/img/apx5000.jpg",
+        "name": "Display",
+        "profilePic": "assets/img/mantenimiento.jpg",
         //"about5000": "Manuales de Ayuda, Sección en la cual se podra observar paso a paso de la ayuda la cual esta buscando.",
         "carganame": "Colocación de Accesorios",
         "carga": "El conector de accesorios se encuentra en el lateral de la antena del radio. Se utiliza para conectar accesorios al radio. Para retirar la cubierta del conector de accesorios, gire el tornillo de mano hacia la izquierda hasta que se libere del radio. Si el tornillo de mano",
@@ -101,8 +101,22 @@ export class Manuales {
         "videobateria":"https://www.youtube.com/embed/PyB81R9j1pk",
       },
       {
-        "name": "Conector de Accesorios",
-        "profilePic": "assets/img/apx5000.jpg",
+        "name": "Sensibilidad",
+        "profilePic": "assets/img/mantenimiento.jpg",
+        //"about5000": "Manuales de Ayuda, Sección en la cual se podra observar paso a paso de la ayuda la cual esta buscando.",
+        "carganame": "Colocación de Accesorios",
+        "carga": "El conector de accesorios se encuentra en el lateral de la antena del radio. Se utiliza para conectar accesorios al radio. Para retirar la cubierta del conector de accesorios, gire el tornillo de mano hacia la izquierda hasta que se libere del radio. Si el tornillo de mano",
+        "cargaimg": "assets/img/accesorio-5000.jpg",
+        "baterianame": "¡Recomendación!",
+        "bateria": "Para evitar el daño del conector, protéjalo con la cubierta de conector cuando no lo utilice.",
+        "bateriaimg":"assets/img/accesorio-5000-2.jpg",
+        "bateriaimg2":"assets/img/accesorio-5000-3.jpg",
+        "preguntabateria":"¿Le quedo alguna duda, de como colocar la antena en el radio?. A continuación, encontrara un video relacionado a este tema.",
+        "videobateria":"https://www.youtube.com/embed/PyB81R9j1pk",
+      },
+      {
+        "name": "Perillas",
+        "profilePic": "assets/img/mantenimiento.jpg",
         //"about5000": "Manuales de Ayuda, Sección en la cual se podra observar paso a paso de la ayuda la cual esta buscando.",
         "carganame": "Colocación de Accesorios",
         "carga": "El conector de accesorios se encuentra en el lateral de la antena del radio. Se utiliza para conectar accesorios al radio. Para retirar la cubierta del conector de accesorios, gire el tornillo de mano hacia la izquierda hasta que se libere del radio. Si el tornillo de mano",
