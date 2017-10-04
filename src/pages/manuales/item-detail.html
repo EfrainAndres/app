@@ -13,9 +13,6 @@
 
   <ion-list>
     <button ion-item (click)="openManual(manual)" *ngFor="let manual of currentManuales">
-      <ion-avatar item-start>
-        <img [src]="manual.profilePic" />
-      </ion-avatar>
       <h2>{{manual.name}}</h2>
       <p>{{manual.about}}</p>
     </button>

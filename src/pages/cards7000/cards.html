@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Menú</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-navbar color="secondary">
+    <ion-title>Mantenimiento Radio APX-7000</ion-title>
+  </ion-navbar>
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let manual7000 of currentManuales7000">
+      <button ion-item (click)="openManual7000(manuales7000)">
+        <ion-avatar item-start>
+          <img [src]="manual7000.profilePic" />
+        </ion-avatar>
+        <h2>{{manual7000.name}}</h2>
+      </button>
+
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Menú</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-navbar color="secondary">
+    <ion-title>Mantenimiento Radio APX-7000</ion-title>
+  </ion-navbar>
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let itemcinco of currentItemscinco">
+      <button ion-item (click)="openItemcinco(itemcinco)">
+        <ion-avatar item-start>
+          <img [src]="itemcinco.profilePic" />
+        </ion-avatar>
+        <h2>{{itemcinco.name}}</h2>
+      </button>
+
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

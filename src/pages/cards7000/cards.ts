@@ -6,6 +6,8 @@ import { ItemDetailPage } from '../item-detail/item-detail';
 
 import { ManualPage } from '../manuales/item-modelo';
 
+import { Manual7000Page } from '../manuales7000/item-modelo';
+
 import { Items } from '../../providers/providers';
 
 import { Item } from '../../models/item';
@@ -14,17 +16,21 @@ import { Manuales } from '../../providers/providers';
 
 import { Manual } from '../../models/manuales';
 
-@Component({
-  selector: '5000-page',
-  templateUrl: '5000.html'
-})
-export class CincomilPage {
-  currentItems: Item[];
-  currentManuales: Manual[];
+import { Manuales7000 } from '../../providers/providers';
 
-  constructor(public navCtrl: NavController, public items: Items,public manuales: Manuales, public modalCtrl: ModalController) {
+import { Manual7000 } from '../../models/manuales7000';
+
+@Component({
+  selector: 'cards-7000-page',
+  templateUrl: 'cards.html'
+})
+export class Cards7000Page {
+  currentItems: Item[];
+  currentManuales7000: Manual7000[];
+
+  constructor(public navCtrl: NavController, public items: Items,public manuales7000: Manuales7000, public modalCtrl: ModalController) {
     this.currentItems = this.items.query();
-    this.currentManuales = this.manuales.query();
+    this.currentManuales7000 = this.manuales7000.query();
   }
 
   /**
@@ -63,9 +69,9 @@ export class CincomilPage {
     });
   }
 
-  openManual(manual: Manual) {
-    this.navCtrl.push(ManualPage, {
-      manual: manual
+  openManual7000(manual7000: Manual7000) {
+    this.navCtrl.push(Manual7000Page, {
+      manual7000: manual7000
     });
   }
 }

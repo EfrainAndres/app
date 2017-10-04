@@ -7,11 +7,17 @@ import { Storage, IonicStorageModule } from '@ionic/storage';
 import { MyApp } from './app.component';
 
 import { CardsPage } from '../pages/cards/cards';
+import { Cards7000Page } from '../pages/cards7000/cards';
+import { Cards7500Page } from '../pages/cards7500/cards';
 import { ContentPage } from '../pages/content/content';
 import { ItemCreatePage } from '../pages/item-create/item-create';
 import { ItemDetailPage } from '../pages/item-detail/item-detail';
+import { ItemCincoDetailPage } from '../pages/item-detail-cinco/item-detail';
 import { ListMasterPage } from '../pages/list-master/list-master';
+import { ListCincoMasterPage } from '../pages/list-master-cinco/list-master';
 import { ManualPage } from '../pages/manuales/item-modelo';
+import { Manual7000Page } from '../pages/manuales7000/item-modelo';
+import { Manual7500Page } from '../pages/manuales7500/item-modelo';
 import { LoginPage } from '../pages/login/login';
 import { MapPage } from '../pages/map/map';
 import { MenuPage } from '../pages/menu/menu';
@@ -25,7 +31,10 @@ import { WelcomePage } from '../pages/welcome/welcome';
 
 import { Api } from '../providers/api';
 import { Items } from '../mocks/providers/items';
+import { Itemscinco } from '../mocks/providers/itemscinco';
 import { Manuales } from '../mocks/providers/manuales';
+import { Manuales7000 } from '../mocks/providers/manuales7000';
+import { Manuales7500 } from '../mocks/providers/manuales7500';
 import { Settings } from '../providers/settings';
 import { User } from '../providers/user';
 
@@ -63,11 +72,17 @@ export function provideSettings(storage: Storage) {
   declarations: [
     MyApp,
     CardsPage,
+    Cards7000Page,
+    Cards7500Page,
     ContentPage,
     ItemCreatePage,
     ItemDetailPage,
+    ItemCincoDetailPage,
     ListMasterPage,
+    ListCincoMasterPage,
     ManualPage,
+    Manual7000Page,
+    Manual7500Page,
     LoginPage,
     MapPage,
     MenuPage,
@@ -97,11 +112,17 @@ export function provideSettings(storage: Storage) {
   entryComponents: [
     MyApp,
     CardsPage,
+    Cards7000Page,
+    Cards7500Page,
     ContentPage,
     ItemCreatePage,
     ItemDetailPage,
+    ItemCincoDetailPage,
     ListMasterPage,
+    ListCincoMasterPage,
     ManualPage,
+    Manual7000Page,
+    Manual7500Page,
     LoginPage,
     MapPage,
     MenuPage,
@@ -116,7 +137,10 @@ export function provideSettings(storage: Storage) {
   providers: [
     Api,
     Items,
+    Itemscinco,
     Manuales,
+    Manuales7000,
+    Manuales7500,
     User,
     Camera,
     GoogleMaps,
@@ -124,7 +148,7 @@ export function provideSettings(storage: Storage) {
     StatusBar,
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },
     // Keep this to enable Ionic's runtime error handling during development
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
   ]
 })
 export class AppModule { }

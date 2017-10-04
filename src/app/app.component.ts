@@ -5,11 +5,15 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { CardsPage } from '../pages/cards/cards';
+import { Cards7000Page } from '../pages/cards7000/cards';
+import { Cards7500Page } from '../pages/cards7500/cards';
 import { ContentPage } from '../pages/content/content';
 import { FirstRunPage } from '../pages/pages';
 import { ListMasterPage } from '../pages/list-master/list-master';
+import { ListCincoMasterPage } from '../pages/list-master-cinco/list-master';
 import { LoginPage } from '../pages/login/login';
 import { ItemDetailPage } from '../pages/item-detail/item-detail';
+import { ItemCincoDetailPage } from '../pages/item-detail-cinco/item-detail';
 import { MapPage } from '../pages/map/map';
 import { MenuPage } from '../pages/menu/menu';
 import { SearchPage } from '../pages/search/search';
@@ -49,17 +53,16 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
+    { title: 'Inicio', component: ListMasterPage },
     //{ title: 'Tutorial', component: TutorialPage },
     //{ title: 'Welcome', component: WelcomePage },
     //{ title: 'Tabs', component: TabsPage },
     { title: 'Mantenimiento APX 5000', component: CardsPage },
-
-    { title: 'Inicio', component: ListMasterPage },
+    { title: 'Mantenimiento APX 7000', component: ListCincoMasterPage },
     //{ title: 'Mantenimiento APX 5000', component: CincomilPage },
     { title: 'Ayudas Audio-Visuales', component: ContentPage },
     //{ title: 'Signup', component: SignupPage },
-    { title: 'Eleméntos Comúnes', component: MapPage },
-    //{ title: 'Item Detail', component: ItemDetailPage },
+    //{ title: 'Eleméntos Comúnes', component: MapPage },
     //{ title: 'Menu', component: MenuPage },
     //{ title: 'Settings', component: SettingsPage },
     //{ title: 'Search', component: SearchPage },

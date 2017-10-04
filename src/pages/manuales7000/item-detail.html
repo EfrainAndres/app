@@ -1,0 +1,47 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>{{ manual7000.name }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+
+  <ion-list>
+    <button ion-item (click)="openManual7000(manuales7000)" *ngFor="let manual7000 of currentManuales7000">
+      <ion-avatar item-start>
+        <img [src]="manual7000.profilePic" />
+      </ion-avatar>
+      <h2>{{manual7000.name}}</h2>
+      <p>{{manual7000.about}}</p>
+    </button>
+  </ion-list>
+
+  <div class="manual7000-detail" padding>
+    <p>{{manual7000.about5000}}</p>
+    <ion-navbar color="primary">
+      <ion-title>{{ manual7000.carganame }}</ion-title>
+    </ion-navbar>
+    <p>{{manual7000.carga}}</p>
+    <img height="135" width="100%" [src]="manual7000.cargaimg" />
+
+    <ion-navbar color="secondary">
+      <ion-title>{{ manual7000.baterianame }}</ion-title>
+    </ion-navbar>
+    <p>{{manual7000.bateria}}</p>
+    <img height="150" width="120" [src]="manual7000.bateriaimg" />
+    <img height="150" width="120" [src]="manual7000.bateriaimg2" />
+
+    <ion-navbar color="primary">
+      <p>{{manual7000.preguntabateria}}</p>
+    </ion-navbar>
+
+    <ion-card>
+      <iframe width="100%" height="315" [src]="manual7000.videobateria | youtube" frameborder="0" allowfullscreen></iframe>
+    </ion-card>
+
+  </div>
+</ion-content>

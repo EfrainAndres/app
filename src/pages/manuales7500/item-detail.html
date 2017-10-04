@@ -1,0 +1,45 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Bateria</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-list>
+    <button ion-item (click)="openManual7500(manuales7500)" *ngFor="let manual7500 of currentManuales7500">
+      <ion-avatar item-start>
+        <img [src]="manual7500.profilePic" />
+      </ion-avatar>
+      <h2>Bateria</h2>
+      <p>{{manual7500.about}}</p>
+    </button>
+  </ion-list>
+
+  <div class="manual7500-detail" padding>
+    <ion-navbar color="primary">
+      <ion-title>Carga de la Bateria</ion-title>
+    </ion-navbar>
+    <p>La batería aprobada por Motorola que se entrega con el radio está descargada. Antes de utilizar una batería nueva, cárguela durante 16 horas como mínimo para garantizar una capacidad y un rendimiento óptimos.</p>
+    <img height="135" width="100%" src="assets/img/carga.jpg" />
+
+    <ion-navbar color="secondary">
+      <ion-title>Colocación de la Bateria </ion-title>
+    </ion-navbar>
+    <p>Con el radio apagado, deslice la batería en el bastidor del radio hasta que encajen los pestillos laterales.</p>
+    <img height="150" width="50%" src="assets/img/bateria.jpg" />
+    <img height="150" width="50%" src="assets/img/bateria2.jpg" />
+
+    <ion-navbar color="primary">
+      <p>¿Le quedo alguna duda, de como colocar la bateria en el radio?. A continuación, encontrara un video relacionado a este tema.</p>
+    </ion-navbar>
+
+    <ion-card>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/PyB81R9j1pk" frameborder="0" allowfullscreen></iframe>
+    </ion-card>
+
+  </div>
+</ion-content>
