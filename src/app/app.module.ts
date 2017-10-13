@@ -13,8 +13,10 @@ import { ContentPage } from '../pages/content/content';
 import { ItemCreatePage } from '../pages/item-create/item-create';
 import { ItemDetailPage } from '../pages/item-detail/item-detail';
 import { ItemCincoDetailPage } from '../pages/item-detail-cinco/item-detail';
+import { ItemSQDetailPage } from '../pages/item-detail-sq/item-detail';
 import { ListMasterPage } from '../pages/list-master/list-master';
 import { ListCincoMasterPage } from '../pages/list-master-cinco/list-master';
+import { ListSQMasterPage } from '../pages/list-master-sq/list-master';
 import { ManualPage } from '../pages/manuales/item-modelo';
 import { Manual7000Page } from '../pages/manuales7000/item-modelo';
 import { Manual7500Page } from '../pages/manuales7500/item-modelo';
@@ -32,6 +34,7 @@ import { WelcomePage } from '../pages/welcome/welcome';
 import { Api } from '../providers/api';
 import { Items } from '../mocks/providers/items';
 import { Itemscinco } from '../mocks/providers/itemscinco';
+import { Itemssq } from '../mocks/providers/itemssq';
 import { Manuales } from '../mocks/providers/manuales';
 import { Manuales7000 } from '../mocks/providers/manuales7000';
 import { Manuales7500 } from '../mocks/providers/manuales7500';
@@ -78,8 +81,10 @@ export function provideSettings(storage: Storage) {
     ItemCreatePage,
     ItemDetailPage,
     ItemCincoDetailPage,
+    ItemSQDetailPage,
     ListMasterPage,
     ListCincoMasterPage,
+    ListSQMasterPage,
     ManualPage,
     Manual7000Page,
     Manual7500Page,
@@ -118,8 +123,10 @@ export function provideSettings(storage: Storage) {
     ItemCreatePage,
     ItemDetailPage,
     ItemCincoDetailPage,
+    ItemSQDetailPage,
     ListMasterPage,
     ListCincoMasterPage,
+    ListSQMasterPage,
     ManualPage,
     Manual7000Page,
     Manual7500Page,
@@ -138,6 +145,7 @@ export function provideSettings(storage: Storage) {
     Api,
     Items,
     Itemscinco,
+    Itemssq,
     Manuales,
     Manuales7000,
     Manuales7500,

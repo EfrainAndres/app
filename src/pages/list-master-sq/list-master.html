@@ -9,18 +9,18 @@
 </ion-header>
 
 <ion-content>
- 
+
   <ion-navbar color="secondary">
     <ion-title>Mantenimiento Radio APX-7000</ion-title>
   </ion-navbar>
 
   <ion-list>
-    <ion-item-sliding *ngFor="let itemcinco of currentItemscinco">
-      <button ion-item (click)="openItemcinco(itemcinco)">
+    <ion-item-sliding *ngFor="let itemsq of currentItemssq">
+      <button ion-item (click)="openItemsq(itemsq)">
         <ion-avatar item-start>
-          <img [src]="itemcinco.profilePic" />
+          <img [src]="itemsq.profilePic" />
         </ion-avatar>
-        <h2>{{itemcinco.name}}</h2>
+        <h2>{{itemsq.name}}</h2>
       </button>
 
     </ion-item-sliding>

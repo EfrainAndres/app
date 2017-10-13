@@ -1,0 +1,38 @@
+<ion-header>
+
+  <ion-navbar >
+    <ion-title>{{ itemsq.name }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="itemcinco-profile" text-center #profilePic [style.background-image]="'url(' + itemsq.profilePic + ')'">
+  </div>
+
+  <div class="itemsq-detail" padding>
+    <h2>{{itemsq.name}}</h2>
+    <p>{{itemsq.about}}</p>
+
+    <ion-navbar color="primary">
+      <ion-title style="text-align:center">Partes - {{itemsq.name}}</ion-title>
+    </ion-navbar>
+
+    <img height="500" width="300" style="align:center" [src]="itemsq.imgparte1" />
+
+    <img height="500" width="300" align="right" [src]="itemsq.imgparte2" />
+
+    <ion-navbar color="primary">
+      <ion-title style="text-align:center">Caracteristicas</ion-title>
+    </ion-navbar>
+
+    <img height="500" width="300" style="align:center" [src]="itemsq.caracteristica" />
+
+    <ion-navbar color="primary">
+      <ion-title style="text-align:center">Frecuencia Maxima</ion-title>
+    </ion-navbar>
+
+    <p>{{itemsq.frecuencia}}</p>
+  </div>
+</ion-content>

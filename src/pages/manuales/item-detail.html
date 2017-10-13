@@ -9,8 +9,6 @@
 
 <ion-content>
 
-  <ion-searchbar (ionInput)="getManuales($event)" placeholder="Busqueda de Manual"></ion-searchbar>
-
   <ion-list>
     <button ion-item (click)="openManual(manual)" *ngFor="let manual of currentManuales">
       <h2>{{manual.name}}</h2>

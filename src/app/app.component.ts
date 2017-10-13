@@ -11,9 +11,11 @@ import { ContentPage } from '../pages/content/content';
 import { FirstRunPage } from '../pages/pages';
 import { ListMasterPage } from '../pages/list-master/list-master';
 import { ListCincoMasterPage } from '../pages/list-master-cinco/list-master';
+import { ListSQMasterPage } from '../pages/list-master-sq/list-master';
 import { LoginPage } from '../pages/login/login';
 import { ItemDetailPage } from '../pages/item-detail/item-detail';
 import { ItemCincoDetailPage } from '../pages/item-detail-cinco/item-detail';
+import { ItemSQDetailPage } from '../pages/item-detail-sq/item-detail';
 import { MapPage } from '../pages/map/map';
 import { MenuPage } from '../pages/menu/menu';
 import { SearchPage } from '../pages/search/search';
@@ -59,6 +61,7 @@ export class MyApp {
     //{ title: 'Tabs', component: TabsPage },
     { title: 'Mantenimiento APX 5000', component: CardsPage },
     { title: 'Mantenimiento APX 7000', component: ListCincoMasterPage },
+    { title: 'Mantenimiento APX 7500', component: ListSQMasterPage },
     //{ title: 'Mantenimiento APX 5000', component: CincomilPage },
     { title: 'Ayudas Audio-Visuales', component: ContentPage },
     //{ title: 'Signup', component: SignupPage },

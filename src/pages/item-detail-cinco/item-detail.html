@@ -8,31 +8,38 @@
 
 
 <ion-content>
-  <div class="itemcinco-profile" text-center #profilePic [style.background-image]="'url(' + itemcinco.profilePic + ')'">
-  </div>
 
   <div class="itemcinco-detail" padding>
     <h2>{{itemcinco.name}}</h2>
-    <p>{{itemcinco.about}}</p>
 
     <ion-navbar color="primary">
-      <ion-title style="text-align:center">Partes - {{itemcinco.name}}</ion-title>
+      <ion-title>{{ itemcinco.nameman }}</ion-title>
     </ion-navbar>
 
-    <img height="500" width="300" style="align:center" [src]="itemcinco.imgparte1" />
+    <p>{{itemcinco.descripcion}}</p>
 
-    <img height="500" width="300" align="right" [src]="itemcinco.imgparte2" />
+    <img height="135" width="100%" [src]="itemcinco.img" />
+
+    <ion-navbar color="secondary">
+      <ion-title>{{ itemcinco.recomendacion }}</ion-title>
+    </ion-navbar>
+
+    <p>{{itemcinco.descripman}}</p>
+
+    <img height="150" width="120" [src]="itemcinco.img2" />
+    <img height="150" width="120" [src]="itemcinco.img3" />
 
     <ion-navbar color="primary">
-      <ion-title style="text-align:center">Caracteristicas</ion-title>
+      <p>{{itemcinco.pregunta}}</p>
     </ion-navbar>
 
-    <img height="500" width="300" style="align:center" [src]="itemcinco.caracteristica" />
+    <br>
 
     <ion-navbar color="primary">
-      <ion-title style="text-align:center">Frecuencia Maxima</ion-title>
+      <ion-title style="text-align:center">Video mantenimiento</ion-title>
     </ion-navbar>
 
-    <p>{{itemcinco.frecuencia}}</p>
+    <iframe width="100%" height="315" [src]="itemcinco.video | youtube" frameborder="0" allowfullscreen></iframe>
+
   </div>
 </ion-content>
