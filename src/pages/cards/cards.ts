@@ -14,6 +14,8 @@ import { Manuales } from '../../providers/providers';
 
 import { Manual } from '../../models/manuales';
 
+import { ListMasterPage } from '../list-master/list-master';
+
 @Component({
   selector: 'cards-page',
   templateUrl: 'cards.html'
@@ -66,6 +68,13 @@ export class CardsPage {
   openManual(manual: Manual) {
     this.navCtrl.push(ManualPage, {
       manual: manual
+    });
+  }
+
+  backButtonClick(){
+    this.navCtrl.setRoot(ListMasterPage, {}, {
+      animate: true,
+      direction: 'backward'
     });
   }
 }

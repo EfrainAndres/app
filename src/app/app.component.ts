@@ -41,6 +41,7 @@ import { TranslateService } from '@ngx-translate/core'
     <ion-content>
       <ion-list>
         <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <ion-icon [name]="p.icon" item-left></ion-icon>
           {{p.title}}
         </button>
       </ion-list>
@@ -55,21 +56,21 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
-    { title: 'Inicio', component: ListMasterPage },
+    { title: 'Inicio', icon:'aperture', component: ListMasterPage },
     //{ title: 'Tutorial', component: TutorialPage },
     //{ title: 'Welcome', component: WelcomePage },
     //{ title: 'Tabs', component: TabsPage },
-    { title: 'Mantenimiento APX 5000', component: CardsPage },
-    { title: 'Mantenimiento APX 7000', component: ListCincoMasterPage },
-    { title: 'Mantenimiento APX 7500', component: ListSQMasterPage },
+    { title: 'Mantenimiento APX 5000', icon:'md-build', component: CardsPage },
+    { title: 'Mantenimiento APX 7000', icon:'ios-construct-outline', component: ListCincoMasterPage },
+    { title: 'Mantenimiento APX 7500', icon:'md-settings', component: ListSQMasterPage },
     //{ title: 'Mantenimiento APX 5000', component: CincomilPage },
-    { title: 'Ayudas Audio-Visuales', component: ContentPage },
+    { title: 'Ayudas Audio-Visuales', icon:'logo-youtube', component: ContentPage },
     //{ title: 'Signup', component: SignupPage },
     //{ title: 'Eleméntos Comúnes', component: MapPage },
     //{ title: 'Menu', component: MenuPage },
     //{ title: 'Settings', component: SettingsPage },
     //{ title: 'Search', component: SearchPage },
-    { title: 'Salir', component: LoginPage },
+    { title: 'Salir', icon:'md-log-out', component: LoginPage },
   ]
 
   constructor(private translate: TranslateService, private platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {

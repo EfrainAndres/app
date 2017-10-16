@@ -18,6 +18,8 @@ import { Manuales } from '../../providers/providers';
 
 import { Manual } from '../../models/manuales';
 
+import { ListMasterPage } from '../list-master/list-master';
+
 @Component({
   selector: 'page-list-master',
   templateUrl: 'list-master.html'
@@ -70,6 +72,13 @@ export class ListSQMasterPage {
   openManual(manual: Manual) {
     this.navCtrl.push(ManualPage, {
       manual: manual
+    });
+  }
+
+  backButtonClick(){
+    this.navCtrl.setRoot(ListMasterPage, {}, {
+      animate: true,
+      direction: 'backward'
     });
   }
 }
