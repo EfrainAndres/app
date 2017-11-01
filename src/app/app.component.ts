@@ -68,8 +68,9 @@ export class MyApp {
     //{ title: 'Signup', component: SignupPage },
     //{ title: 'Eleméntos Comúnes', component: MapPage },
     //{ title: 'Menu', component: MenuPage },
-    //{ title: 'Settings', component: SettingsPage },
+    { title: 'Programa Informatico APX CPS', icon:'md-cloud-download', component: SettingsPage },
     //{ title: 'Search', component: SearchPage },
+    //{ title: 'Programa Informatico APX CPS ', icon:'md-cloud-download', component: MapPage },
     { title: 'Salir', icon:'md-log-out', component: LoginPage },
   ]
 

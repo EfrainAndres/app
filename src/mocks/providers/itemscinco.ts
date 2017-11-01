@@ -18,6 +18,32 @@ export class Itemscinco {
   constructor(public http: Http) {
     let itemscinco = [
       {
+        "name": "Procedimientos de limpieza",
+        "profilePic": "assets/img/mantenimiento7000.gif",
+        "nameman": "Limpieza APX 7000",
+        "descripcion": "Los siguientes procedimientos describen los agentes de limpieza recomendados y los métodos que se utilizarán al limpiar las superficies externas e internas del radio. - Las superficies externas incluyen el cabezal de control y el chasis del radio. Estas superficies deben limpiarse cada vez que una inspección visual periódica revele la presencia de manchas, grasa o suciedad. - Las superficies internas solo se pueden limpiar cuando el radio está desarmado para el mantenimiento o reparación. -El único agente recomendado para limpiar las superficies de radio externas es una solución de 0,5 % de un detergente para vajilla suave en agua. - El único líquido recomendado por la fábrica para limpiar las placas de circuitos impresos y sus componentes es alcohol isopropílico (100 % por volumen).",
+        "img": "assets/img/limpieza-7000.png",
+        "recomendacion": "¡Recomendación!",
+        "descripman": "Utilice todos los productos químicos según lo indica el fabricante. Asegúrese de seguir todas las precauciones de seguridad como se definen en la etiqueta o ficha técnica de seguridad de los materiales. Los efectos de ciertos productos químicos y sus vapores pueden dañar algunos plásticos. Los sprays en aerosol, los limpiadores de sintonizadores, los limpiadores de tarjetas de circuito, los alcoholes y otros químicos no deben entrar en contacto con las carcasas de plástico o metal del radio. Se puede producir desde una corrosión extrema hasta la desintegración del plástico.",
+        "img2":"assets/img/limpieza-7500-2.png",
+        "img3":"assets/img/limpieza-7000-3.png",
+        "pregunta":"¿Le quedo alguna duda, de la limpieza correcta del radio APX 7000?. A continuación, encontrara un video relacionado a este tema.",
+        "video":"https://www.youtube.com/embed/1Pkedk_zDSs?rel=0?ecver=1",
+      },
+            {
+        "name": "Procedimientos de desensamblaje",
+        "profilePic": "assets/img/mantenimiento7000.gif",
+        "nameman": "Desensamblaje",
+        "descripcion": "En esta sección se detallan los procedimientos necesarios para retirar y volver a colocar las tarjetas de circuito impreso en los radios móviles APX. Tras realizar la solución de problemas y determinar qué es lo que se debe reemplazar, desconecte el equipo de prueba, el cable de la antena y el cable de alimentación.",
+        "img": "assets/img/ensamble-7000.png",
+        "recomendacion": "¡Recomendación!",
+        "descripman": "Desconecte el cable de alimentación del radio antes de abrir y retirar el PCB. No desconectar la alimentación puede ocasionar daño en la unidad debido a corrientes de sobrevoltaje o cortocircuitos accidentales, así como también puede ocasionar peligro de sacudidas eléctricas.",
+        "img2":"assets/img/ensamble-7000-2.png",
+        "img3":"assets/img/ensamble-7000-3.png",
+        "pregunta":"¿Le quedo alguna duda, del desensamblaje del radio APX 7000?. A continuación, encontrara un video relacionado a este tema.",
+        "video":"https://www.youtube.com/embed/d9AX47YYMbI?rel=0?ecver=1",
+      },
+      {
         "name": "Bateria",
         "profilePic": "assets/img/mantenimiento7000.gif",
         "nameman": "Carga de la Bateria",
@@ -29,6 +55,19 @@ export class Itemscinco {
         "img3":"assets/img/partes-5000-2.jpg",
         "pregunta":"¿Le quedo alguna duda, de como colocar la bateria en el radio?. A continuación, encontrara un video relacionado a este tema.",
         "video": "https://www.youtube.com/embed/Z4x3lh3Nzdc"
+      },
+      {
+        "name": "Piezas APX 7000",
+        "profilePic": "assets/img/mantenimiento.gif",
+        "nameman": "Reemplazo de Piezas",
+        "descripcion": "Debe tener especial cuidado al asegurarse de que el componente sospechoso es efectivamente el origen del fallo. Así no tendrá que desoldar componentes sin necesidad ni extraer piezas, lo que podría dañar o debilitar otros componentes o la misma tarjeta de circuito impreso (PCB).",
+        "img": "assets/img/pieza-7000.png",
+        "recomendacion": "¡Recomendación!",
+        "descripman": "Cuando se reemplazan piezas dañadas, se deben usar piezas idénticas. Compruebe la lista de piezas para obtener el número de pieza correcto de Motorola y solicitar el componente al centro de Piezas de Comunicaciones de Motorola más cercano. Las piezas que aparecen en la lista y que no tienen número no se pueden reemplazar en el campo.",
+        "img2":"assets/img/pieza-7000-2.png",
+        "img3":"assets/img/pieza-7000-3.png",
+        "pregunta":"¿Le quedo alguna duda, de este segmento?. A continuación, encontrara un video relacionado a este tema.",
+        "video":"https://www.youtube.com/embed/d9AX47YYMbI?rel=0?ecver=1",
       },
       {
         "name": "Antena",

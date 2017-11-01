@@ -50,6 +50,8 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { YoutubePipe } from '../pipes/youtube/youtube';
 
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
 export function HttpLoaderFactory(http: Http) {
@@ -153,6 +155,7 @@ export function provideSettings(storage: Storage) {
     Camera,
     GoogleMaps,
     SplashScreen,
+    InAppBrowser,
     StatusBar,
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },
     // Keep this to enable Ionic's runtime error handling during development

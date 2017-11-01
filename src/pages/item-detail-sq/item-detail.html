@@ -1,6 +1,6 @@
 <ion-header>
 
-  <ion-navbar >
+  <ion-navbar color="primary">
     <ion-title>{{ itemsq.name }}</ion-title>
   </ion-navbar>
 
@@ -8,31 +8,43 @@
 
 
 <ion-content>
-  <div class="itemcinco-profile" text-center #profilePic [style.background-image]="'url(' + itemsq.profilePic + ')'">
-  </div>
+
+  <ion-list>
+    <button ion-item (click)="openItemsq(itemsq)" *ngFor="let itemsq of currentItemssq">
+      <h2>{{itemsq.name}}</h2>
+      <p>{{itemsq.about}}</p>
+    </button>
+  </ion-list>
 
   <div class="itemsq-detail" padding>
-    <h2>{{itemsq.name}}</h2>
-    <p>{{itemsq.about}}</p>
+    <p>{{itemsq.about5000}}</p>
+    <ion-navbar color="primary">
+      <ion-title>{{ itemsq.carganame }}</ion-title>
+    </ion-navbar>
+    <p>{{itemsq.carga}}</p>
+    <img height="135" width="100%" [src]="itemsq.cargaimg" />
+
+    <ion-navbar color="secondary">
+      <ion-title>{{ itemsq.baterianame }}</ion-title>
+    </ion-navbar>
+    <p>{{itemsq.bateria}}</p>
+    <div align="center">
+    <img height="150" width="120" [src]="itemsq.bateriaimg" />
+    <img height="150" width="120" [src]="itemsq.bateriaimg2" />
+    </div>
 
     <ion-navbar color="primary">
-      <ion-title style="text-align:center">Partes - {{itemsq.name}}</ion-title>
+      <p>{{itemsq.preguntabateria}}</p>
     </ion-navbar>
 
-    <img height="500" width="300" style="align:center" [src]="itemsq.imgparte1" />
+    <ion-card>
+      <iframe width="100%" height="315" [src]="itemsq.videobateria | youtube" frameborder="0" gesture="media" allowfullscreen></iframe>
+      <ion-card-content>
+        <ion-card-title>
+          {{ itemsq.name }}
+          </ion-card-title>
+      </ion-card-content>
+    </ion-card>
 
-    <img height="500" width="300" align="right" [src]="itemsq.imgparte2" />
-
-    <ion-navbar color="primary">
-      <ion-title style="text-align:center">Caracteristicas</ion-title>
-    </ion-navbar>
-
-    <img height="500" width="300" style="align:center" [src]="itemsq.caracteristica" />
-
-    <ion-navbar color="primary">
-      <ion-title style="text-align:center">Frecuencia Maxima</ion-title>
-    </ion-navbar>
-
-    <p>{{itemsq.frecuencia}}</p>
   </div>
 </ion-content>
