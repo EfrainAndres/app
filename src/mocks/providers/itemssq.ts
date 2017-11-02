@@ -145,7 +145,7 @@ export class Itemssq {
         "carga": "La falla de perillas en el display, como lo es, el potenciometro de volumen y la perilla de canales, se soluciona cambiando los componente de cada perilla, mencionada anteriormente.",
         "cargaimg": "assets/img/preventivo-7500.png",
         "baterianame": "¡Recomendación!",
-        "bateria": "Se puede pensar, que las perillas del sisplay esten dañadas, pero ese problema se puede dar, porque, puede haber suciendad en cada una de las perillas,",
+        "bateria": "Se puede pensar, que las perillas del display esten dañadas, pero ese problema se puede dar, porque, puede haber suciedad en cada una de las perillas.",
         "bateriaimg":"assets/img/preventivo-7500-2.png",
         "bateriaimg2":"assets/img/preventivo-7500-3.png",
         "preguntabateria":"¿Le quedo alguna duda, de como detectar fallas en las perillas?. A continuación, encontrara un video relacionado a este tema.",
